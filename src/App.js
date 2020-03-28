@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import Reset_Button from './component_watch/Reset_Button.js';
+import Start_Button from './component_watch/Start_Button';
+import Stop_Button from './component_watch/Stop_Button';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -8,6 +12,7 @@ class App extends React.Component {
       seconds: 0,
       clearId: null,
      };
+
      //include a bind
      // look up about binds
        this.timer = this.timer.bind(this);
@@ -23,7 +28,7 @@ class App extends React.Component {
     if (btnClick === 'start') {
       let id = setInterval(this.startTimer, 1000);
       this.setState({ clearId: id });
-      // try this instead later (this.setState({seconds: +1}))
+      // /* try this instead later */ (this.setState({seconds: +1}))
     } else if (btnClick === 'reset') {
         this.setState({ seconds: 0 });
         // this.setState({  })
@@ -40,7 +45,7 @@ class App extends React.Component {
   render() { 
     return (
       <div className="App">
-        <h1>Count: 0</h1>
+        <h1>Count: { this.state.seconds }</h1>
         {/* <header className="App-header"> */}
         <form onClick={ this.timer }>        
         <button id="reset">Reset</button>
