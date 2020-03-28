@@ -8,12 +8,13 @@ import Stop_Button from './component_watch/Stop_Button';
 class App extends React.Component {
   constructor(props) {
     super(props);
+    // class component requires .this keyword 
     this.state = { 
       seconds: 0,
       clearId: null,
      };
 
-     //include a bind
+     // include a bind
      // look up about binds
        this.timer = this.timer.bind(this);
        this.startTimer = this.startTimer.bind(this);
@@ -24,11 +25,15 @@ class App extends React.Component {
     // keeps page from refreshing
     e.preventDefault();
     // target the id whether it equals start/pause/reset in e.target.id
+    // .target is a real keyword
     const btnClick = e.target.id;
     if (btnClick === 'start') {
+      //set Interval goes to a place on the computer
+      // look up setInterval??????????????????????????
       let id = setInterval(this.startTimer, 1000);
+      //clears the id --> is actual keyword
       this.setState({ clearId: id });
-      // /* try this instead later */ (this.setState({seconds: +1}))
+      // /* try this instead later */ (this.setState({seconds: +1})) /* didn't work */
     } else if (btnClick === 'reset') {
         this.setState({ seconds: 0 });
         // this.setState({  })
