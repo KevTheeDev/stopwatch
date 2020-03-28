@@ -12,6 +12,10 @@
 
 }
 
+h1{
+  color: rgb(203, 73, 26);
+}
+
 #reset{
   background-color: rgba(0, 78, 172, 0.975);
   border-radius: 1em;
