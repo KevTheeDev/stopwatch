@@ -29,7 +29,8 @@ class App extends React.Component {
     const btnClick = e.target.id;
     if (btnClick === 'start') {
       //set Interval goes to a place on the computer
-      // look up setInterval??????????????????????????
+      // 4. set Interval runs code after a specific set time 
+      // 4. "1000 as the 2nd parameter, is the set time in this instance"
       let id = setInterval(this.startTimer, 1000);
       //clears the id --> is actual keyword
       this.setState({ clearId: id });
