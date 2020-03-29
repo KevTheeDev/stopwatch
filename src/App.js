@@ -37,6 +37,7 @@ class App extends React.Component {
       // /* try this instead later */ (this.setState({seconds: +1})) /* didn't work */
     } else if (btnClick === 'reset') {
         this.setState({ seconds: 0 });
+        clearInterval(this.state.clearId);
         // this.setState({  })
     } else if (btnClick === 'pause') {
         // 4. clearInterval is used to stop an interval
