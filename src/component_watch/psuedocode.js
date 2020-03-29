@@ -38,7 +38,8 @@ https://npm.runkit.com/react-countup#start---void
       </div>
     )}  "
 
-
+Info on binds
+https://www.youtube.com/watch?v=PjS0Gcv9Hx0
 
 
 
