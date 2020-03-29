@@ -14,8 +14,8 @@ class App extends React.Component {
      };
 
      // include a bind
-     // binds are needed to reference the ".this" keyword --> to reference what's in the component
-     // particularly they bind the ".this" keyword to the rest of the code
+     // 3. binds are needed to reference the ".this" keyword --> to reference what's in the component
+     // 3. particularly they bind the ".this" keyword to the rest of the code
        this.timer = this.timer.bind(this);
        this.startTimer = this.startTimer.bind(this);
   }
@@ -39,6 +39,7 @@ class App extends React.Component {
         this.setState({ seconds: 0 });
         // this.setState({  })
     } else if (btnClick === 'pause') {
+        // 4. clearInterval is used to stop an interval
       clearInterval(this.state.clearId);
     }
   }
