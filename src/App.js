@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
-import Reset_Button from './component_watch/Reset_Button.js';
 import Start_Button from './component_watch/Start_Button';
-import Stop_Button from './component_watch/Stop_Button';
 
 
 class App extends React.Component {
@@ -15,7 +13,8 @@ class App extends React.Component {
      };
 
      // include a bind
-     // look up about binds
+     // binds are needed to reference the ".this" keyword --> to reference what's in the component
+     // particularly they bind the ".this" keyword to the rest of the code
        this.timer = this.timer.bind(this);
        this.startTimer = this.startTimer.bind(this);
   }
