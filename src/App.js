@@ -4,6 +4,7 @@ import Start_Button from './component_watch/Start_Button';
 
 
 class App extends React.Component {
+  // the REACT code just really need the constructor(props) and the super (props)
   constructor(props) {
     super(props);
     // class component requires .this keyword 
@@ -20,8 +21,8 @@ class App extends React.Component {
   }
   
   timer(e){
-    // keep clock from starting without a button press
-    // keeps page from refreshing
+    // '.e' keep clock from starting without a button press
+    // '.e' keeps page from refreshing
     e.preventDefault();
     // target the id whether it equals start/pause/reset in e.target.id
     // .target is a real keyword
@@ -50,13 +51,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Count: { this.state.seconds }</h1>
-        {/* <header className="App-header"> */}
         <form onClick={ this.timer }>        
-        <button id="reset">Reset</button>
-        <button id='start'>Start</button>
-        <button id="pause">Pause</button>
+          <button id="reset">Reset</button>
+          <button id='start'>Start</button>
+          <button id="pause">Pause</button>
         </form>
-        {/* </header> */}
         
       </div>
     );
