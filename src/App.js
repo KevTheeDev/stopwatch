@@ -28,16 +28,21 @@ class App extends React.Component {
     // .target is a real keyword
     const btnClick = e.target.id;
     if (btnClick === 'start') {
-      //set Interval goes to a place on the computer
-      // 4. set Interval runs code after a specific set time 
+      // set Interval goes to a place on the computer
+      // 4. set nterval runs code after a specific set time 
       // 4. "1000 as the 2nd parameter, is the set time in this instance"
+      // want to include a way to get rid of feature where if you press   the start button more than once it makes the timer go quicker and you are unable to stop or pause it
       let id = setInterval(this.startTimer, 1000);
       //clears the id --> is actual keyword
       this.setState({ clearId: id });
+
       // /* try this instead later */ (this.setState({seconds: +1})) /* didn't work */
     } else if (btnClick === 'reset') {
         this.setState({ seconds: 0 });
+        // MUST include "clearInterval(this.state.clearId);"
+        // without this it resets, but the seconds continue to count up
         clearInterval(this.state.clearId);
+
         // this.setState({  })
     } else if (btnClick === 'pause') {
         // 4. clearInterval is used to stop an interval
