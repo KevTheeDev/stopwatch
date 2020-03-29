@@ -24,11 +24,11 @@ Make buttons blue
 
                             REFERENCES
 
-To make a counter
+1. To make a counter
 https://medium.com/better-programming/building-a-simple-countdown-timer-with-react-4ca32763dda7
 
 
-Another Counter (never used but good example)
+2. Another Counter (never used but good example)
 https://npm.runkit.com/react-countup#start---void
 "   <CountUp delay={2} start={0} end={100}>
     {({ countUpRef, start }) => (
@@ -38,8 +38,15 @@ https://npm.runkit.com/react-countup#start---void
       </div>
     )}  "
 
-Info on binds
+
+3. Info on binds
 https://www.youtube.com/watch?v=PjS0Gcv9Hx0
+
+
+4. Set and Clear Interval
+https://upmostly.com/tutorials/setinterval-in-react-components-using-hooks
+
+
 
 
 
