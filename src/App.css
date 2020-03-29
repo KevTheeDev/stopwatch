@@ -17,21 +17,30 @@ h1{
 }
 
 #reset{
-  background-color: rgba(0, 78, 172, 0.975);
+  background-color: rgba(7, 97, 206, 0.975);
   border-radius: 1em;
   color: white;
+  height: .5in;
+  width: 1in;
 }
 
 #start{
-  background-color: rgba(0, 78, 172, 0.975);
+  background-color: rgba(23, 126, 7, 0.975);
   border-radius: 1em;
   color: white;
+  height: .5in;
+  width: 1in;
+  margin-top: 5ex;
+  margin-left: 14ex;
+  margin-right: 14ex;
 }
 
 #pause{
-  background-color: rgba(0, 78, 172, 0.975);
+  background-color: rgba(234, 234, 11, 0.975);
   border-radius: 1em;
-  color: white;
+  color: rgb(235, 151, 151);
+  height: .5in;
+  width: 1in;
 }
 
 @keyframes App-logo-spin {
